@@ -1,0 +1,177 @@
+/* Custom properties */
+:root {
+    --accent-color: #800000;
+    --gradient-color: #f6bb73;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Default styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(90% + 0.2vw);
+    line-height: 1.5;
+    width: 80%;
+    max-width: 1024px;
+    margin: auto;
+    border: 2px solid var(--accent-color);
+}
+
+a:hover, a:focus {
+    font-style: italic;
+    color: var(--accent-color);
+}
+
+h1, h2, h3, p, ul {
+    padding: .25em 0;
+}
+
+h1 {
+    font-size: 150%;
+}
+
+h2 {
+    font-size: 130%;
+    color: var(--accent-color);
+}
+
+h3 {
+    font-size: 105%;
+}
+
+ul {
+    margin-left: 2em;
+}
+
+/* Header styles */
+header {
+    border-bottom: 2px solid var(--accent-color);
+    background-image: linear-gradient(
+        30deg,
+        var(--gradient-color) 0%,
+        white 30%,
+        white 65%,
+        var(--gradient-color) 100%
+    );
+    line-height: 1.2;
+
+    & h2 {
+        font-size: 175%;
+        padding: .5em 0 0;
+    }
+
+    & h3 {
+        font-size: 130%;
+        font-style: italic;
+        padding-bottom: 1em;
+    }
+
+    & img {
+        float: left;
+        width: 15%;
+        min-width: 40px;
+        max-width: 80px;
+        height: auto;
+        margin: .75em 1em;
+    }
+}
+
+/* Main content */
+main {
+    display: flex;
+    padding: 0 1em 1em;
+    gap: 1em;
+
+    & blockquote {
+        font-style: italic;
+        padding-left: 1em;
+    }
+}
+
+/* Guest speakers sidebar */
+aside {
+    flex: 0 0 25%;
+
+    & h2 {
+        color: black;
+    }
+
+    & h3 {
+        margin-top: .5em;
+    }
+
+    & img {
+        width: 60%;
+        min-width: 40px;
+        max-width: 75px;
+        height: auto;
+        border: 4px double var(--accent-color);
+        border-radius: 10px;
+        display: block;
+        margin: .25em 0 .75em;
+    }
+}
+
+/* Main section */
+section {
+    flex: 1;
+    min-width: 0;
+
+    & img {
+        float: right;
+        width: 45%;
+        min-width: 100px;
+        max-width: 250px;
+        height: auto;
+        margin: .5em 0 .75em 1em;
+        border: 4px double var(--accent-color);
+        border-radius: 10px;
+    }uy6t5r4
+}
+
+/* Featured speaker */
+.featured {
+    & h1 {
+        border-top: 2px solid var(--accent-color);
+        border-bottom: 2px solid var(--accent-color);
+        padding: .25em 0;
+        margin: .5em 0;
+    }
+}
+
+/* Individual speaker page */
+.speaker {
+    & h1 {
+        color: var(--accent-color);
+    }
+
+    & h2 {
+        color: black;
+    }
+
+    & p {
+        padding: .5em 0;
+    }
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--accent-color);
+    clear: both;
+
+    & p {
+        text-align: center;
+        color: white;
+        padding: 1em 0;
+    }
+}
+
+/* CSS class */
+.large {
+    font-size: 125%;
+}
